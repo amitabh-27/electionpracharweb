@@ -807,6 +807,18 @@
       align-items: center;
     }
 
+    @media (max-width: 1200px) {
+      .contact-grid {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 40px !important;
+      }
+      .contact-form-card, .contact-copy {
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+    }
+
     .contact-copy h2 {
       max-width: 540px;
     }
@@ -887,6 +899,16 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 13px;
+    }
+
+    @media (max-width: 900px) {
+      .form-row {
+        grid-template-columns: 1fr !important;
+        display: block !important;
+      }
+      .form-row > .field {
+        margin-bottom: 15px;
+      }
     }
 
     .field {
